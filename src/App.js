@@ -18,7 +18,6 @@ class App extends Component {
 const DrumContainer = (props) => {
   return(
     <div id="drum-container" >
-      
       <div className="row drum-row">
           <button className="drum-pad">Q</button>
           <button className="drum-pad">W</button>
@@ -33,16 +32,22 @@ const DrumContainer = (props) => {
           <button className="drum-pad">Z</button>
           <button className="drum-pad">X</button>
           <button className="drum-pad">C</button>
-      
       </div>
   </div>
   );
-
 }
 
 const ControlContainer = (props) => {
   return(
-    <div id="display">
+    <div id="control-container">
+      <p className="center label">Power</p>
+      <div className="toggle center">
+      </div>
+      <div id="display" className="center">
+      </div>
+      <p className="center label">Bank</p>
+      <div className="toggle center">
+      </div>
     </div>
   )
 }
